@@ -4,15 +4,17 @@ import './style.css';
 
 
 import Header from './components/Header';
-import Movie from './components/Movie';
 import MovieList from './components/MovieList';
 import movies from './movies.js';
+
 
 const App = () => (
   <>
     <Header />
-    <MovieList movies={movies} />
-    <Movie title={title} poster={poster} year={year} rating={rating} director={director} genre={genre} />
+    <div className="movieList">
+      <MovieList movies={movies} />
+    </div>
+    
   </>
 );
 
